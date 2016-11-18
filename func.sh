@@ -1,7 +1,8 @@
 
 PARSER_EVAL=bazel-bin/syntaxnet/parser_eval
 MODEL_DIR=syntaxnet/models/parsey_mcparseface
-[[ "$1" == "--conll" ]] && INPUT_FORMAT=stdin-conll || INPUT_FORMAT=stdin
+# [[ "$1" == "--conll" ]] && INPUT_FORMAT=stdin-conll || INPUT_FORMAT=stdin
+INPUT_FORMAT=stdin
 
 $PARSER_EVAL \
   --input=$INPUT_FORMAT \
